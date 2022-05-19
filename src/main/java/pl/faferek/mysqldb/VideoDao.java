@@ -7,6 +7,8 @@ public interface VideoDao {
 
     List<Video> findAll();
 
+    Video getOne(long id);
+
     void updateVideo(Video newVideo);
 
     void deleteVideo(long id);
