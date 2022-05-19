@@ -9,5 +9,5 @@ public interface VideoDao {
 
     void updateVideo(Video newVideo);
 
-    void deleteVideo();
+    void deleteVideo(long id);
 }

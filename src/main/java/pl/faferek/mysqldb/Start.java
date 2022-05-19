@@ -15,7 +15,7 @@ public class Start {
 ////        videoDao.saveVideo(3L, "python", "przemek2.pl");
 ////        videoDao.saveVideo(4L, "c++", "przemek3.pl");
 //        videoDao.updateVideo(new Video(4L,"innyTemat", "innyURL"));
-
+        videoDao.deleteVideo(2L);
         videoDao.findAll().forEach(System.out::println);
 
     }
