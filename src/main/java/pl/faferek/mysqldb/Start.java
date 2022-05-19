@@ -11,8 +11,9 @@ public class Start {
     @Autowired
     public Start(VideoDao videoDao) {
         this.videoDao = videoDao;
-        videoDao.saveVideo(2L, "java", "przemek.pl");
-        videoDao.saveVideo(3L, "python", "przemek2.pl");
-        videoDao.saveVideo(4L, "c++", "przemek3.pl");
+//        videoDao.saveVideo(2L, "java", "przemek.pl");
+////        videoDao.saveVideo(3L, "python", "przemek2.pl");
+////        videoDao.saveVideo(4L, "c++", "przemek3.pl");
+        videoDao.findAll().forEach(System.out::println);
     }
 }
